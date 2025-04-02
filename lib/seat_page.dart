@@ -198,7 +198,11 @@ class _SeatPageState extends State<SeatPage> {
                           ),
                           CupertinoDialogAction(
                             isDestructiveAction: true,
-                            onPressed: () {},
+                            onPressed: () {
+                              // 두번 전으로 돌아감
+                              Navigator.pop(context);
+                              Navigator.pop(context);
+                            },
                             child: Text(
                               '확인',
                               style: TextStyle(color: Colors.blue),
